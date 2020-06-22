@@ -12,53 +12,51 @@
   <body>
     <!-- TODO: add back(arrow left) and search icon -->
     <div id="app">
-      <header>
+      <!-- <header>
         <h1>SMALL TALK CHATBOT</h1>
-      </header>
+      </header> -->
       <div class="pageWrapper">
-        <div class="row">
-          <div class="chat-wrapper">
-            <nav class="nav">
-              <div class="nav-logo">
-                <img src="/images/arrow-left.svg" alt="back" />
-                <span>ROSITA.ai</span>
-              </div>
-              <ul>
-                <li><img src="/images/search.svg" alt="search" /></li>
-              </ul>
-            </nav>
-            <div v-for="chat in chats" class="chat-holder">
-              <div class="active-user message-to">
-                <span class="message-query">
-                  {{ chat.query }}
-                  <!-- Lorem ipsum, dolor sit amet consectetur adipisicing. -->
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  {{ chat.speech }}
-                </span>
-              </div>
+        <div class="chat-wrapper">
+          <nav class="nav">
+            <div class="nav-logo">
+              <img src="/images/arrow-left.svg" alt="back" />
+              <span>ROSITA.ai</span>
             </div>
-            <div class="form-group box">
-              <input
-                type="text"
-                placeholder="Enter your message and press enter!"
-                @keyup.enter="sendChat"
-                class="form-control"
+            <ul>
+              <li><img src="/images/search.svg" alt="search" /></li>
+            </ul>
+          </nav>
+          <div v-for="chat in chats" class="chat-holder">
+            <div class="active-user message-to">
+              <span class="message-query">
+                {{ chat.query }}
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing. -->
+              </span>
+              <img
+                src="/images/user2.png"
+                class="avatar"
+                alt="Active user avatar"
               />
             </div>
+
+            <div class="bot message-from">
+              <img
+                src="/images/robot-bot.gif"
+                class="avatar"
+                alt="Bot avatar"
+              />
+              <span class="message-speech">
+                {{ chat.speech }}
+              </span>
+            </div>
+          </div>
+          <div class="form-group box">
+            <input
+              type="text"
+              placeholder="Enter your message and press enter!"
+              @keyup.enter="sendChat"
+              class="form-control"
+            />
           </div>
         </div>
       </div>

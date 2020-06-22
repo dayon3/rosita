@@ -44,7 +44,7 @@ ul {
 .pageWrapper {
   position: relative;
   border-radius: 10px;
-  max-width: 400px;
+  width: 400px;
   height: 70vh;
   margin: 0 auto;
   overflow-x: hidden;
@@ -179,6 +179,11 @@ header {
   border: 1px solid #e5e4e9;
 }
 
+.box input:focus {
+  outline: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
 .box > img {
   position: absolute;
   right: 1.1rem;
@@ -187,18 +192,18 @@ header {
 @media screen and (max-width: 600px) {
   body {
     margin: 0;
-    justify-content: start;
+    justify-content: center;
   }
 
   .pageWrapper {
-    margin: 0;
-    width: 100vw;
+    margin: 0 auto;
+    width: 100%;
     height: 100vh;
     border-radius: 0;
   }
 
   .chat-wrapper {
-    height: 100vh;
+    width: 100vw;
   }
 
   header {
