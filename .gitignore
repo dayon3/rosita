@@ -4,6 +4,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,dotenv,node,zsh
 
 ### dotenv ###
+config.env
 .env
 
 ### Linux ###
