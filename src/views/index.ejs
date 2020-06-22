@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 
     <title>Small Talk ChatBot</title>
   </head>
@@ -30,8 +30,8 @@
             <div v-for="chat in chats" class="chat-holder">
               <div class="active-user message-to">
                 <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
+                  {{ chat.query }}
+                  <!-- Lorem ipsum, dolor sit amet consectetur adipisicing. -->
                 </span>
                 <img
                   src="/images/user2.png"
@@ -47,249 +47,7 @@
                   alt="Bot avatar"
                 />
                 <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
-                </span>
-              </div>
-              <div class="active-user message-to">
-                <span class="message-query">
-                  <!-- {{ chat.query }} -->
-                  Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </span>
-                <img
-                  src="/images/user2.png"
-                  class="avatar"
-                  alt="Active user avatar"
-                />
-              </div>
-
-              <div class="bot message-from">
-                <img
-                  src="/images/robot-bot.gif"
-                  class="avatar"
-                  alt="Bot avatar"
-                />
-                <span class="message-speech">
-                  <!-- {{ chat.speech }} -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                  voluptates!
+                  {{ chat.speech }}
                 </span>
               </div>
             </div>
@@ -300,15 +58,18 @@
                 @keyup.enter="sendChat"
                 class="form-control"
               />
-              <img src="/images/send.svg" alt="send message" />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
-    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"
+      integrity="sha256-bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://js.pusher.com/6.0/pusher.min.js"></script>
     <script src="/main.js"></script>
   </body>
 </html>

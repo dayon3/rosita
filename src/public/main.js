@@ -4,8 +4,8 @@ new Vue({
     chats: [],
   },
   created() {
-    let pusher = new Pusher(process.env.PUSHER_KEY, {
-      cluster: process.env.PUSHER_CLUSTER,
+    let pusher = new Pusher('6f60a9ccb7a4371164d3', {
+      cluster: 'ap2',
       encrypted: true,
     });
 

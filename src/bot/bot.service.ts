@@ -4,8 +4,8 @@ import Pusher = require('pusher');
 
 @Injectable()
 export class BotService {
-  private baseURL = process.env.BASE_URL;
-  private token = process.env.BOT_TOKEN;
+  private baseURL = 'https://api.dialogflow.com/v1/query?v=20150910';
+  private token = '2ddb1c13cbee4909b507549d4ca2a413';
 
   sendDialogue(info: Record<string, string>) {
     const data = {
@@ -25,10 +25,10 @@ export class BotService {
 
   postToPusher(speech: string, query: string) {
     const pusher = new Pusher({
-      appId: process.env.PUSHER_ID,
-      key: process.env.PUSHER_KEY,
-      secret: process.env.PUSHER_SECRET,
-      cluster: process.env.PUSHER_CLUSTER,
+      appId: '1022368',
+      key: '6f60a9ccb7a4371164d3',
+      secret: 'ff1fc4b63de1c53fb519',
+      cluster: 'ap2',
       useTLS: true,
     });
     const response = {
