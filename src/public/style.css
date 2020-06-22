@@ -74,6 +74,10 @@ ul {
   font-size: 1.4rem;
 }
 
+.nav-logo > span {
+  font-weight: bold;
+}
+
 .nav-logo > img {
   margin-right: 0.3rem;
 }
@@ -204,6 +208,7 @@ header {
 
   .chat-wrapper {
     width: 100vw;
+    height: 100vh;
   }
 
   header {
